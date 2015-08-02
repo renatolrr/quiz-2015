@@ -46,4 +46,11 @@ router.post('/quizes/:quizId(\\d+)/comments',    commentController.create);
 router.get('/quizes/:quizId(\\d+)/comments/:commentId(\\d+)/publish', 
 	                                    sessionController.loginRequired, commentController.ownershipRequired, commentController.publish);
 
+
+//Autor  Ojo revisar
+/* GET author page. */
+router.get('/author', function(req, res) {
+  res.render('author', { autor: 'renatolrr' });
+});
+
 module.exports = router;
