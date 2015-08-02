@@ -50,7 +50,7 @@ router.get('/quizes/:quizId(\\d+)/comments/:commentId(\\d+)/publish',
 //Autor  Ojo revisar
 /* GET author page. */
 router.get('/author', function(req, res) {
-  res.render('author', { autor: 'renatolrr' });
+  res.render('author', { autor: 'renatolrr', errors: [] });
 });
 
 module.exports = router;
